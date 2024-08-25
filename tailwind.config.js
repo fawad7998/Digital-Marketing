@@ -9,40 +9,40 @@ const generateHeightMap = () => {
 };
 
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
-      xs: "426px", // Custom breakpoint for 360px and above
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      xs: '426px', // Custom breakpoint for 360px and above
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
     extend: {
       colors: {
         // digital-markting
-        "top-nav-color": "#33315E",
-        "heading-color": "#0E0E0E",
-        "text-color": "#383838",
-        "orange-color": "#EA7932",
-        "green-color": "#3DDDA0",
-        "blue-hover-color": "#219DC5",
-        "blue-navi-color": "#1D1B4C",
+        'top-nav-color': '#33315E',
+        'heading-color': '#0E0E0E',
+        'text-color': '#383838',
+        'orange-color': '#EA7932',
+        'green-color': '#3DDDA0',
+        'blue-hover-color': '#219DC5',
+        'blue-navi-color': '#1D1B4C',
         // digital-markting
-        primary: "#013966",
-        secondary: "#004C89",
-        "medium-sky-blue": "#6CACDF",
-        "blue-button-color": "#0064B4",
-        cancel: "#BB203C",
-        "light-red": "#B4828B",
-        "light-pink": "#B4818B",
-        "light-sky-blue": "#CAE8FF",
-        "light-gray": "#E0DFDF",
-        "lighter-gray": "#E7E7E7",
-        "bright-sky-blue": "#7EC6FF",
-        "repeat-medium-sky-blue": "#6CACDF",
-        gray: "#B5B5B5",
-        "li-gray": "#F2F2F2",
+        primary: '#013966',
+        secondary: '#004C89',
+        'medium-sky-blue': '#6CACDF',
+        'blue-button-color': '#0064B4',
+        cancel: '#BB203C',
+        'light-red': '#B4828B',
+        'light-pink': '#B4818B',
+        'light-sky-blue': '#CAE8FF',
+        'light-gray': '#E0DFDF',
+        'lighter-gray': '#E7E7E7',
+        'bright-sky-blue': '#7EC6FF',
+        'repeat-medium-sky-blue': '#6CACDF',
+        gray: '#B5B5B5',
+        'li-gray': '#F2F2F2',
       },
       fontSize: (() => {
         const fontSize = {};
@@ -52,11 +52,11 @@ export default {
         return fontSize;
       })(),
       // fontWeight: (() => {
-      //   const fontWeight = {};
-      //   for (let i = 1; i <= 1000; i++) {
-      //     fontWeight[`${i}px`] = `${i}px`;
-      //   }
-      //   return fontWeight;
+      //  const fontWeight = {};
+      //  for (let i = 1; i <= 1000; i++) {
+      //   fontWeight[`${i}px`] = `${i}px`;
+      //  }
+      //  return fontWeight;
       // })(),
 
       fontWeight: (() => {

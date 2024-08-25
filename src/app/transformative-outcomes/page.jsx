@@ -36,20 +36,20 @@ function TransformativeOutcomes() {
 
     return (
         <div className="max-w-6xl py-12 mx-auto px-4">
-            <div className="text-center  space-y-4 mb-12">
+            <div className="text-center space-y-4 mb-12">
                 <h1 className="text-green-color text-lg tracking-wide font-extrabold flex items-center justify-center before:content-[''] before:h-3px before:w-10 before:bg-green-color before:mr-2 after:content-[''] after:h-3px after:w-10 after:bg-green-color after:ml-2">
                     Transformative Outcomes
                 </h1>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                     What you will be able to achieve after course completion?
                 </h2>
-                <h2 className="text-lg  text-gray-900">
+                <h2 className="text-lg text-gray-900">
                     Knowledge is half the power. You will win the battle when you implement what you learned in our 8 to 10 months digital marketing course. Following are some of the things you can achieve after course completion.
                 </h2>
             </div>
             {outcomes.map((outcome, index) => (
-                <div key={index} className={`flex items-start space-x-4 p-6 mb-4 border-2 border-dashed ${outcome.borderColor} rounded-lg bg-white shadow hover:shadow-slate-500 hover:shadow-lg transition-all`}>
-                    <img src={outcome.icon} alt="" className="w-32 h-32 object-contain" />
+                <div key={index} className={`flex flex-wrap  lg:flex-nowrap md:flex-nowrap items-start space-x-4 p-6 mb-4 border-2 border-dashed ${outcome.borderColor} rounded-lg bg-white shadow hover:shadow-slate-500 hover:shadow-lg transition-all`}>
+                    <img src={outcome.icon} alt="" className="w-32 h-32 object-contain items-center" />
                     <div>
                         <h3 className="text-3xl text-[#1D1B4C] font-bold text-gray-900 mb-2">{outcome.title}</h3>
                         <p className="text-gray-700 text-sm">{outcome.description}</p>

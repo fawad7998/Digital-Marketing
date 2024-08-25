@@ -9,7 +9,7 @@ const CountdownTimer = () => {
         const calculateTimeLeft = () => {
             const currentDate = new Date();
 
-            const month = currentDate.getMonth() + 1; // January is 0, so we add 1
+            const month = currentDate.getMonth() + 1;
 
             const year = currentDate.getFullYear();
 

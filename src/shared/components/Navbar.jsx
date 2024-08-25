@@ -8,7 +8,6 @@ import Image from "next/image";
 import { MdPhoneInTalk } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { MdLocationOn } from "react-icons/md";
-
 import Headroom from "react-headroom";
 import Link from "next/link";
 
@@ -60,7 +59,6 @@ export default function Navbar() {
   const [isSideMenuOpen, setSideMenu] = useState(false);
 
   useEffect(() => {
-    // Ensure that the side menu state is consistent
     setSideMenu(false);
   }, []);
   function openSideMenu() {

@@ -1,24 +1,23 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import Image from "next/image";
-
 import { MdPhoneInTalk } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import { MdLocationOn } from "react-icons/md";
 
 import Headroom from "react-headroom";
+import Link from "next/link";
 
 const navItems = [
   {
     label: "For Professionals",
     link: "#",
     children: [
-      { label: "Todo list", link: "#" },
+      { label: "Todo list", link: "/todolist" },
       { label: "Calendar", link: "#" },
       { label: "Reminders", link: "#" },
       { label: "Planning", link: "#" },
@@ -75,9 +74,8 @@ export default function Navbar() {
       {/*Navbar*/}
       <Headroom className="absolute m-auto right-0 left-0">
         <div
-          className={`m-auto right-0 left-0 flex w-full max-w-6xl justify-start max-sm:justify-between px-4 md:px-[100px] ${
-            !isSideMenuOpen && "py-3"
-          } lg:py-0 text-sm shadow-md bg-white lg:bg-blue-navi-color`}
+          className={`m-auto right-0 left-0 flex w-full max-w-6xl justify-start max-sm:justify-between px-4 md:px-[100px] ${!isSideMenuOpen && "py-3"
+            } lg:py-0 text-sm shadow-md bg-white lg:bg-blue-navi-color`}
         >
           <section ref={animationParent} className="flex items-center gap-10">
             {!isSideMenuOpen && (
@@ -126,9 +124,8 @@ export default function Navbar() {
 
           <FiMenu
             onClick={openSideMenu}
-            className={`cursor-pointer text-4xl md:hidden ${
-              isSideMenuOpen && "hidden"
-            }`}
+            className={`cursor-pointer text-4xl md:hidden ${isSideMenuOpen && "hidden"
+              }`}
           />
         </div>
       </Headroom>

@@ -1,4 +1,7 @@
+import TopNav from "@/shared/components/TopNav";
 import "./globals.css";
+import Navbar from "@/shared/components/Navbar";
+import Footer from "@/shared/components/Footer";
 
 export const metadata = {
   title: "Digital Marketing",
@@ -8,7 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <TopNav />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+
     </html>
   );
 }

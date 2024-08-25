@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import CountdownTimer from "../CountdownTimer/page";
+import CountdownTimer from "../countdowntimer/page";
 
 const NextCourse = () => {
     return (
